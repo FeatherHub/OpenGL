@@ -1,0 +1,6 @@
+DLL 경로 설정
+Property Sheet이 아니라 프로젝트에서 설정해야 함
+Property Manager -> Debugging -> Environment -> PATH=DLL경로; 
+
+.lib 파일 링크하기는
+Linker -> Input 에서 경로 추가
