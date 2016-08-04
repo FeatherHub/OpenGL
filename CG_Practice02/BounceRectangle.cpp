@@ -1,13 +1,13 @@
 #include <glut.h>
 
 //사각형의 크기와 시작 위치
-GLfloat x1 = 0.f;
-GLfloat y1 = 0.f;
-GLsizei rSize = 50.f;
+GLfloat x1 = -10.f;
+GLfloat y1 = -10.f;
+GLsizei rSize = 10.f;
 
 //x와 y 방향으로 움직이는 크기
-GLfloat xStep = 1.f;
-GLfloat yStep = 1.f;
+GLfloat xStep = 10.f;
+GLfloat yStep = 10.f;
 
 //윈도우 크기
 GLfloat winSizeWidth;

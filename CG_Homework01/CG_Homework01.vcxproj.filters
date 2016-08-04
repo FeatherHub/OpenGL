@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="OpenGLRenderer.h" />
+    <ClInclude Include="Square.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLLogic.h" />
+    <ClInclude Include="OpenGLData.h" />
+    <ClInclude Include="RGBA.h">
+      <Filter>Shape</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="OpenGLRenderer.cpp" />
+    <ClCompile Include="Square.cpp">
+      <Filter>Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Point.cpp">
+      <Filter>Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="OpenGLLogic.cpp" />
+    <ClCompile Include="OpenGLData.cpp" />
+    <ClCompile Include="RGBA.cpp">
+      <Filter>Shape</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Shape">
+      <UniqueIdentifier>{eed7c63c-a54c-43cb-b898-c02105980a04}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
