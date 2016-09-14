@@ -63,8 +63,10 @@ void RenderScene()
 	glEnable(GL_LIGHT0);
 
 	//Draw Object
-	glColor3f(1.f, 1.f, 1.f);
-	glutSolidTeapot(10.f);
+//	glColor3f(0.3f, 0.3f, 0.3f);
+	glutSolidTeapot(10.f); 
+
+//	glutSolidSphere(10.f, 15, 15); //http://stackoverflow.com/questions/8251911/texturing-a-glutsolidsphere
 
 	glPopMatrix();
 
@@ -107,7 +109,7 @@ void LoadTexture()
 	UINT w, h, err;
 
 	err = lodepng::decode(image, w, h, 
-						"texture.png");
+						"2.png");
 
 	if (err)
 		printf("err %u : %s \n",

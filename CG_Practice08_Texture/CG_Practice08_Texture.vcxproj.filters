@@ -3,6 +3,7 @@
   <ItemGroup>
     <ClCompile Include="TextureMappingTest.cpp" />
     <ClCompile Include="lodepng.cpp" />
+    <ClCompile Include="TextureMappingTest2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lodepng.h" />
