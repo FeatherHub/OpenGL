@@ -8,7 +8,7 @@ enum CharacterConfig
 	CHAR_INIT_X = 0,
 	CHAR_INIT_Y = -100,
 	CHAR_INIT_Z = -300,
-	INCREASE_SPEED = 4,
+	INCREASE_SPEED = 3,
 };
 
 enum GameConfig
@@ -52,9 +52,9 @@ void GameManager::Update(int deltaTime)
 		m_character->Update(deltaTime);
 
 		const auto& charPos = m_character->GetPosition();
-		if (charPos.z < -m_horizon)
+		if (charPos.z < - m_horizon)
 		{
-			LevelUp();
+			LevelClear();
 			m_gameState = GONG;
 		}
 	}
@@ -62,7 +62,7 @@ void GameManager::Update(int deltaTime)
 	case GameState::GONG:
 	{
 		elapsedTime += deltaTime;
-		if (elapsedTime > 1200)
+		if (elapsedTime > 1400)
 		{
 			elapsedTime = 0;
 			m_gameState = PLAY;
@@ -72,12 +72,12 @@ void GameManager::Update(int deltaTime)
 	}
 }
 
-void GameManager::LevelUp()
+void GameManager::LevelClear()
 {
 	PlaySound(L"gong.wav", NULL, SND_FILENAME | SND_ASYNC);
 
 	m_character->SetPosition(vec3{ CHAR_INIT_X, CHAR_INIT_Y, CHAR_INIT_Z });
-	m_character->IncreaseWalkSpeed(INCREASE_SPEED);
+	m_character->IncreaseMoveSpeed(INCREASE_SPEED);
 	m_character->ResetColor();
 	m_horizon += INCREASE_HORIZON;
 	ApplyNewWindow();
@@ -116,9 +116,9 @@ void GameManager::DarkenWorld()
 
 	glClearColor(r, g, b, 1);
 
-	r -= 0.038f;
-	g -= 0.038f;
-	b -= 0.038f;
+	r -= 0.028f;
+	g -= 0.028f;
+	b -= 0.028f;
 }
 
 void GameManager::ProcessInput()

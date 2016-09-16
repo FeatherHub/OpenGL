@@ -19,7 +19,7 @@ public:
 
 private:
 	void ProcessInput();
-	void LevelUp();
+	void LevelClear();
 	void ApplyNewWindow();
 	void DarkenWorld();
 

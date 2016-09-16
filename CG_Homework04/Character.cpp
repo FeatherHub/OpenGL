@@ -43,7 +43,7 @@ void Character::Draw()
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 	glTranslatef(m_position.x, m_position.y, m_position.z);
-	glRotatef(25+m_lookRight, 0.f, 1.f, 0.f);
+	glRotatef(25.f + m_lookRight, 0.f, 1.f, 0.f);
 
 	glBegin(GL_POLYGON);
 
@@ -146,8 +146,8 @@ void Character::Jump()
 
 void Character::ResetColor()
 {
-	static float rLimit = 400.f;
-	static float gLimit = 350.f;
+	static float rLimit = 375.f;
+	static float gLimit = 340.f;
 	static float bLimit = 300.f;
 
 	m_colors.clear();
@@ -164,5 +164,5 @@ void Character::ResetColor()
 	gLimit -= 5.f;
 	bLimit -= 7.5f;
 
-	m_lookRight += 0.5f;
+	m_lookRight += 2.75f;
 }

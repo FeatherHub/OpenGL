@@ -22,11 +22,11 @@ public:
 	void Update(int deltaTime);
 	void Move(DIRECTION dir);
 	void Jump();
-	void ResetColor();
 
 	const vec3& GetPosition() { return m_position; }
 	void SetPosition(const vec3& pos) { m_position = pos; }
-	void IncreaseWalkSpeed(const int& spd) { m_moveSpeed += spd; }
+	void IncreaseMoveSpeed(const int& spd) { m_moveSpeed += spd; }
+	void ResetColor();
 
 private:
 	void ProcessJump(int deltaTime);
