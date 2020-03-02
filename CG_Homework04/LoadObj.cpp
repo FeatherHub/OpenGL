@@ -1,6 +1,7 @@
 #include "LoadObj.h"
 #include <windows.h>
 #include <vector>
+#include <string>
 #include "glut.h"
 
 bool LoadObj(

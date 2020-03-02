@@ -75,7 +75,6 @@ void main()
 	//윈도우 사이즈가 바뀔 때마다 호출할 함수를 등록한다
 
 	SetupRC();
-	//개인이 만든 함수 즉 예약 함수 아님
 	//Rendering 전에 수행될 OpenGL 초기화 작업을 한다
 
 	glutMainLoop();
